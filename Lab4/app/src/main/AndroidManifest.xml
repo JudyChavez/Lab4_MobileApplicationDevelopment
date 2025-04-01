@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--your app declares the permission(s) it requires by including <uses-permission> tags-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--You need to update the Android manifest so the app uses the application class you just defined.
+        add the android:name attribute with a value of application class name ".MarsPhotosApplication".
+            android:name=".MarsPhotosApplication"-->
     <application
+        android:name=".UserDirectoryApplication"
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
